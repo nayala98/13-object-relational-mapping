@@ -32,8 +32,6 @@ Product.init(
       allowNull: false,
       // instruct that this is the Primary Key
       primaryKey: true,
-      // turn on auto increment
-      autoIncrement: true
   }
   },
   {
