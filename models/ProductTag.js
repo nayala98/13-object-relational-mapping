@@ -16,11 +16,20 @@ ProductTag.init(
     // define product_id column
     product_id: {
       // use the special Sequelize DataTypes object provide what type of data it is
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      references: {
+        model: "product",
+        key: "id"
+    }
   },
   // define tag_id column
   tag_id: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      type: DataTypes.INTEGER,
+            references: {
+                model: "tag",
+                key: "id"
+            }
   }
   },
   {
